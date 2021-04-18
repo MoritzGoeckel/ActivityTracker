@@ -26,7 +26,7 @@ int main(int argc, char* arv[]){
 	while(true){
 		std::this_thread::sleep_for(std::chrono::seconds(1));
 		
-		std::cout << "Title:     " << GetActiveWindowTitle() << std::endl;
+		std::cout << "Title:     " << getActiveWindow() << std::endl;
 		std::cout << "Idle time: " << getIdleTime() << std::endl;
 	}
 	return 0;
